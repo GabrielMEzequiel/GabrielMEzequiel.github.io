@@ -5,6 +5,10 @@
         margin: 0 8px;
         width: calc(100% - 16px);
     }
+
+    .banner img {
+        display: none;
+    }
 }
 
 /*
