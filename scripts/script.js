@@ -1,19 +1,28 @@
 const myEmoji = document.getElementById('myEmoji');
-let isFirstEmoji = true;
 
-function toggleEmoji() {
-    if (isFirstEmoji) {
-        myEmoji.src = 'assets/myEmoji2.gif';
-        isFirstEmoji = false;
-
-        // Espera até que o 'myEmoji2.gif' termine a animação e volta para o primeiro
-        setTimeout(() => {
-            myEmoji.src = 'assets/myEmoji.gif';
-            isFirstEmoji = true;
-        }, 2000); // Ajuste o tempo (2000ms = 2 segundos) para o tempo da animação do segundo emoji
-
-    }
+// Função para mostrar o avatar parado
+function mostrarAvatarParado() {
+    myEmoji.src = 'assets/myEmoji2.gif';
 }
 
-// Alterna a cada 2 minutos (120000ms)
-setInterval(toggleEmoji, 120000);
+// Função para o avatar piscando os olhos
+function piscarOlhos() {
+    myEmoji.src = 'assets/myEmoji.gif';
+
+    // Depois de piscar, volta para o avatar parado
+    setTimeout(mostrarAvatarParado, 550);
+}
+
+// Função para o avatar piscando com sorriso
+function piscarSorriso() {
+    myEmoji.src = 'assets/myEmoji3.gif';
+
+    // Depois de piscar com sorriso, volta para o avatar parado
+    setTimeout(mostrarAvatarParado, 700);
+}
+
+// Piscar ambos os olhos a cada 3 segundos
+setInterval(piscarOlhos, 3000);
+
+// Piscar com sorriso a cada 1 minuto, sincronizado com as piscadas normais
+setInterval(piscarSorriso, 60000);

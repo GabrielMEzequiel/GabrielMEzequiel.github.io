@@ -116,12 +116,12 @@ header {
     overflow: hidden;
     flex: 1 0 0px;
     padding: 0 12px;
-    top: 24px;
-    margin: 0 24px;
+    margin: 24px 24px 0;
     border-radius: 30px;
-    backdrop-filter: blur(20px);
     background-color: rgba(220, 230, 255, 0.7);
     border: 1px solid rgba(0, 0, 50, 0.1);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
 }
 
 .social {
@@ -173,8 +173,14 @@ nav {
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    padding: 16px;
     height: 100vh;
+    width: 100%;
     gap: 8px;
+}
+
+.bannerTitle {
+    z-index: 2;
 }
 
 .banner h1 {
@@ -192,10 +198,10 @@ nav {
 
 .banner img {
     position: absolute;
-    height: 700px;
-    z-index: 2;
+    height: calc(100% - 100px);
+    z-index: 1;
     bottom: 0;
-    left: 32px;
+    left: 160px;
 }
 
 .banner .seeMore {
@@ -207,6 +213,7 @@ nav {
     position: absolute;
     bottom: 24px;
     gap: 8px;
+    z-index: 2;
     font-size: 16px;
 }
 
@@ -217,10 +224,11 @@ nav {
     height: 56px;
     width: 56px;
     border-radius: 28px;
-    backdrop-filter: blur(20px);
     background-color: rgba(220, 230, 255, 0.7);
     border: 1px solid rgba(0, 0, 50, 0.1);
     transition: transform 0.3s ease;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
 }
 
 .banner .seeMore .icon i {
