@@ -13,60 +13,144 @@
         <script src="https://kit.fontawesome.com/75a885e5d5.js" crossorigin="anonymous"></script>
     </head>
     <body>
-
         <header>
-            <a href="#" class="logo">
-                <img src="./assets/logo.png" alt="logo">
-            </a>
-            <nav>
-                <a href="#sobre" class="navItem">
-                    Sobre
+            <div class="header">
+                <a href="#banner" class="logo">
+                    <img src="./assets/logo.png" alt="logo">
                 </a>
-                <a href="#projetos" class="navItem">
-                    Projetos
-                </a>
-                <a href="#contato" class="navItem">
-                    Contato
-                </a>
-            </nav>
-            <div class="social">
-                <a href="https://www.linkedin.com/in/gabriel-martins-ezequiel/" title="linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/GabrielMEzequiel" title="github" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <nav>
+                    <a href="#sobre" class="navItem">
+                        Sobre
+                    </a>
+                    <a href="#projetos" class="navItem">
+                        Projetos
+                    </a>
+                    <a href="#contato" class="navItem">
+                        Contato
+                    </a>
+                </nav>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/gabriel-martins-ezequiel/" title="linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/GabrielMEzequiel" title="github" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>   
             </div>
         </header>
 
-        <div class="banner">
-            <div class="bannerTitle">
-                <h1>Gabriel Martins Ezequiel</h1>
-                <h3>Desenvolvedor Front-End</h3>
-            </div>
+        <main>
             <img id="myEmoji" src="./assets/myEmoji2.gif" alt="my emoji">
-            <div class="seeMore">
-                <span>Veja mais</span>
-                <div class="icon">
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
+            <div class="mainContent">
+
+                <section id="banner">
+                    <div class="title">
+                        <h2>Gabriel Martins Ezequiel</h2>
+                        <h3>Desenvolvedor Front-End</h3>
+                    </div>
+                    <div class="seeMore">
+                        <span>Veja mais</span>
+                        <a href="#sobre" class="icon">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </section>
+
+                <section id="sobre">
+                    <div class="title">
+                        <h2>Sobre</h2>
+                        <h1 class="titleBackground">Sobre</h1>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Sou estudante de Sistemas de Informação, apaixonado por design de interfaces (UX/UI) e desenvolvimento front-end.
+                            Atualmente, estou focado em aprimorar minhas habilidades em React. Meu objetivo é combinar um design atraente com
+                            uma codificação eficiente, criando experiências de usuário que façam a diferença. Além disso, estou explorando áreas
+                            como back-end e desenvolvimento full-stack, buscando ser um desenvolvedor mais completo e preparado para os desafios
+                            do mercado.
+                        </p>
+
+                       
+
+                    </div>
+                </section>
+
+                <section id="projetos">
+                    <div class="title">
+                        <h2>Projetos</h2>
+                        <h1 class="titleBackground">Projetos</h1>
+                    </div>
+                    <div class="content">
+
+                        <div class="projects">
+                            <div class="projectCard">
+                                <img src="./assets/cuber.jpg" alt="Cuber" class="projectImage">
+    
+                                <div class="projectInfo">
+                                    <h3 class="projectTitle">Cuber</h3>
+    
+                                    <p class="projectDescription">
+                                        Sistema de cursos online sobre cubo mágico.
+                                    </p>
+    
+                                    <a href="#" class="projectButton">Ver Projeto</a>
+                                </div>
+    
+                                <p class="projectTechnologies">                    
+                                    <i class="fa-brands fa-php"></i>                           
+                                </p>
+                            </div>
+
+                            <div class="projectCard">
+                                <img src="./assets/psicotech01.jpg" alt="PsicoTech" class="projectImage">
+    
+                                <div class="projectInfo">
+                                    <h3 class="projectTitle">PsicoTech</h3>
+    
+                                    <p class="projectDescription">
+                                        Sistema de gestão para clínicas de psicologia.
+                                    </p>
+    
+                                    <a href="#" class="projectButton">Ver Projeto</a>
+                                </div>
+    
+                                <p class="projectTechnologies">                    
+                                    <i class="fa-brands fa-python"></i>                           
+                                </p>
+                            </div>
+    
+                            <div class="projectCard">
+                                <img src="./assets/famtask01.jpg" alt="FamTask" class="projectImage">
+    
+                                <div class="projectInfo">
+                                    <h3 class="projectTitle">FamTask</h3>
+    
+                                    <p class="projectDescription">
+                                        Sistema de tarefas e recompensas para famílias.
+                                    </p>
+    
+                                    <a href="#" class="projectButton">Ver Projeto</a>
+                                </div>
+    
+                                <p class="projectTechnologies">                    
+                                    <i class="fa-brands fa-react"></i>                            
+                                </p>
+                            </div>
+                        </div>
+
+                        <a href="#" class="seeAll">Ver todos os Projetos</a>
+                        
+                    </div>
+                </section>
+
+                <section id="contato">
+                    <div class="title">
+                        <h2>Contato</h2>
+                        <h1 class="titleBackground">Contato</h1>
+                    </div>
+                    <div class="content">
+                        
+                    </div>
+                </section>
             </div>
-            <div class="bubbles">
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-            </div>
-            
-        </div>
-        
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae ornare magna. Cras suscipit accumsan tellus at eleifend. In non porttitor mauris. Integer convallis arcu sed libero euismod, sed faucibus diam aliquet. Vestibulum mollis lectus viverra massa auctor lobortis. Integer finibus vehicula libero sit amet porta. Cras non finibus ligula, id dapibus mauris. Nunc sapien lacus, cursus quis dignissim ac, mollis eget elit. Fusce erat odio, tincidunt sit amet condimentum eget, consectetur vel enim. Nulla in tincidunt lectus. Cras porttitor, mi eget auctor convallis, eros enim ornare turpis, consequat varius metus elit sit amet ligula. Proin non est magna. Ut pellentesque faucibus ipsum sed mattis. Nulla finibus mi sem, in scelerisque nisl lacinia at. Fusce ut turpis dignissim, tincidunt dui sit amet, bibendum quam. Aliquam ac luctus metus.
-
-Duis laoreet turpis sed porta gravida. Phasellus nec augue vel quam volutpat condimentum. Fusce efficitur dui ut lacus commodo convallis. Donec tempor ullamcorper purus, non tristique orci iaculis id. Nullam tellus eros, hendrerit vel eleifend in, aliquet sed nisl. Vestibulum a molestie lectus, ut feugiat lacus. Nunc in enim sit amet quam rutrum placerat. Vestibulum auctor condimentum turpis, quis dictum sem tincidunt blandit. Sed mollis lectus eu venenatis tristique.
-
-Praesent molestie lectus quis metus rutrum gravida. Donec dapibus sem nulla, eu hendrerit nisl rhoncus eu. Aliquam sagittis purus mi, eget condimentum nunc varius non. Nunc lobortis massa nec feugiat vestibulum. Suspendisse ultrices vitae augue at auctor. Nunc blandit quam nec nibh commodo laoreet. Suspendisse eget cursus ipsum. Nullam consequat tempor magna, in posuere dolor gravida a. Integer quis iaculis mi, a viverra sem. Aliquam ipsum tellus, tempus eget nibh sit amet, hendrerit hendrerit massa. Praesent condimentum augue a augue vulputate interdum.
-
-Fusce est elit, porttitor a venenatis id, facilisis ac dolor. Integer sollicitudin vel magna egestas finibus. Integer consequat tincidunt eros non pharetra. Curabitur sollicitudin nisi in imperdiet sagittis. Nunc non mollis leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam ut dapibus mauris. Curabitur mollis mattis erat, ut egestas magna ullamcorper quis. Nunc convallis, purus at posuere convallis, nibh erat finibus lectus, vitae volutpat erat nulla quis turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec odio enim, ultrices maximus urna rutrum, fermentum vestibulum sem.
-
-Duis id accumsan est, vel venenatis lorem. Sed quis volutpat ligula, eget volutpat lorem. Vivamus maximus libero enim, in efficitur magna faucibus in. Duis cursus vitae elit a eleifend. Morbi pretium imperdiet urna id venenatis. Mauris eget sapien vestibulum, egestas tortor sit amet, auctor tortor. Mauris blandit libero eu tincidunt eleifend. In at felis eu enim auctor aliquam vel quis metus. Morbi non sem sem. Duis sit amet lacinia sem. Nulla in ex ut odio egestas suscipit a et neque.
+        </main>
 
         <script src="scripts/script.js"></script>
     </body>
