@@ -1,21 +1,5 @@
 @media (max-width: 1024px) {
 
-    section .titleBackground {
-        font-size: 5rem;
-    }
-
-    section .title h2 {
-        font-size: 2.5rem;
-    }
-
-    section .content p {
-        font-size: 0.9rem;
-    }
-}
-
-
-@media (max-width: 900px) {
-
     #myEmoji {
         display: none;
     }
@@ -37,19 +21,6 @@
         height: calc(100vh - 68px);
         margin-top: 68px;
     }
-
-    section .titleBackground {
-        font-size: 4rem;
-        transform: translate(-5px, -10px);
-    }
-
-    section .title h2 {
-        font-size: 2rem;
-    }
-
-    section .content p {
-        font-size: 0.8rem;
-    }
 }
 
 @media (max-width: 480px) {
@@ -59,11 +30,11 @@
     }
 
     section .titleBackground {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     section .title h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     section .content p {
@@ -72,5 +43,9 @@
 
     .projectTitle {
         font-size: 1.5rem;
+    }
+
+    .contactForm {
+        padding: 16px;
     }
 }
